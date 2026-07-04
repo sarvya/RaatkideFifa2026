@@ -1,0 +1,378 @@
+:root {
+  --green: #0a5c36;
+  --gold: #eab308;
+  --blue: #1d4ed8;
+  --red: #dc2626;
+  --orange: #f97316;
+  --purple: #7c3aed;
+  --teal: #0d9488;
+  --pink: #ec4899;
+  --bg: #0b1f16;
+  --card: #ffffff;
+  --text: #1a1a1a;
+  --muted: #6b7280;
+  --danger: #b91c1c;
+  --ok: #15803d;
+  --silver: #94a3b8;
+  --bronze: #b45309;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(160deg, #1e1b4b 0%, #3b0764 25%, #7c2d12 55%, #0d3b2e 80%, #051b12 100%);
+  background-attachment: fixed;
+  color: var(--text);
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+  padding: 36px 16px 24px;
+  color: #fff;
+}
+
+header h1 {
+  margin: 0 0 8px;
+  font-size: 2.2rem;
+  letter-spacing: 0.5px;
+  background: linear-gradient(90deg, #fbbf24, #f97316, #ec4899, #a855f7, #38bdf8, #34d399);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 6s linear infinite;
+  text-shadow: none;
+}
+
+@keyframes shimmer {
+  to {
+    background-position: 200% center;
+  }
+}
+
+header p {
+  margin: 0;
+  color: #e5e7eb;
+  font-size: 0.95rem;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px 60px;
+}
+
+section {
+  background: var(--card);
+  border-radius: 14px;
+  padding: 20px 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  border-top: 5px solid var(--gold);
+}
+
+.section-leaderboard {
+  border-top-color: var(--gold);
+}
+
+.section-players {
+  border-top-color: var(--blue);
+}
+
+.section-bracket {
+  border-top-color: var(--red);
+}
+
+section h2 {
+  margin-top: 0;
+  color: var(--green);
+  border-bottom: 2px solid var(--gold);
+  padding-bottom: 8px;
+  display: inline-block;
+}
+
+.section-players h2 {
+  border-bottom-color: var(--blue);
+}
+
+.section-bracket h2 {
+  border-bottom-color: var(--red);
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.hint {
+  margin: 0 0 16px;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.reset-btn {
+  background: none;
+  border: 1px solid var(--danger);
+  color: var(--danger);
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.reset-btn:hover {
+  background: var(--danger);
+  color: #fff;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  text-align: left;
+  padding: 10px 8px;
+  border-bottom: 1px solid #eee;
+}
+
+th {
+  color: var(--muted);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+tbody tr:hover {
+  background: #fff8e1;
+}
+
+td.rank {
+  font-weight: 700;
+  font-size: 1.1rem;
+  width: 40px;
+}
+
+td.points {
+  font-weight: 700;
+  color: var(--green);
+}
+
+td.alive {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.players-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.player-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 14px 16px;
+  border-left: 4px solid var(--blue);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.player-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.player-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.player-card-header h3 {
+  margin: 0;
+}
+
+.total-points {
+  background: linear-gradient(90deg, var(--green), var(--teal));
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.pick {
+  display: grid;
+  grid-template-columns: 32px 1fr auto auto;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 0;
+  border-top: 1px dashed #eee;
+  font-size: 0.9rem;
+}
+
+.pick:first-child {
+  border-top: none;
+}
+
+.priority-badge {
+  color: #1a1a1a;
+  font-weight: 700;
+  border-radius: 6px;
+  text-align: center;
+  padding: 2px 0;
+  font-size: 0.75rem;
+}
+
+.priority-badge.priority-1 {
+  background: var(--gold);
+}
+
+.priority-badge.priority-2 {
+  background: var(--silver);
+  color: #fff;
+}
+
+.priority-badge.priority-3 {
+  background: var(--bronze);
+  color: #fff;
+}
+
+.priority-badge.priority-4 {
+  background: #e5e7eb;
+}
+
+.pick-points {
+  font-weight: 700;
+  color: var(--green);
+}
+
+.pick-status {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-align: right;
+}
+
+.pick.alive .pick-status {
+  color: var(--ok);
+}
+
+.pick.eliminated {
+  opacity: 0.55;
+}
+
+.pick.eliminated .pick-status {
+  color: var(--danger);
+}
+
+.bracket {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  overflow-x: auto;
+}
+
+.round-column h3 {
+  font-size: 0.9rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.round-column:nth-child(1) h3 { color: var(--blue); }
+.round-column:nth-child(2) h3 { color: var(--purple); }
+.round-column:nth-child(3) h3 { color: var(--pink); }
+.round-column:nth-child(4) h3 { color: var(--orange); }
+
+.match {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  font-size: 0.85rem;
+}
+
+.match .team {
+  padding: 6px 10px;
+  background: #fafafa;
+}
+
+.match .team.tbd {
+  color: var(--muted);
+  font-style: italic;
+}
+
+.match .team-btn {
+  width: 100%;
+  display: block;
+  text-align: left;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.match .team-btn:hover {
+  background: #fde68a;
+}
+
+.match .team.winner {
+  background: linear-gradient(90deg, var(--green), var(--teal));
+  color: #fff;
+  font-weight: 700;
+}
+
+.match .team.winner:hover {
+  filter: brightness(1.1);
+}
+
+.match .vs {
+  text-align: center;
+  font-size: 0.7rem;
+  color: var(--muted);
+  background: #f0f0f0;
+}
+
+.match.decided {
+  border-color: var(--gold);
+  border-width: 2px;
+}
+
+.clear-btn {
+  width: 100%;
+  border: none;
+  border-top: 1px solid #eee;
+  background: #fff;
+  color: var(--danger);
+  font-size: 0.7rem;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.clear-btn:hover {
+  background: #fdecec;
+}
+
+footer {
+  text-align: center;
+  color: #e5e7eb;
+  font-size: 0.8rem;
+  padding-bottom: 24px;
+}
+
+footer code {
+  color: #fde68a;
+}
+
+@media (max-width: 700px) {
+  .bracket {
+    grid-template-columns: 1fr;
+  }
+}

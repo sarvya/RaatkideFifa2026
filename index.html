@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Raatkide — FIFA World Cup 2026</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+  <h1>🏆 FIFA World Cup 2026 — Raatkide ⚽</h1>
+  <p>Round of 16 pick'em: 4 teams per player, ranked by priority (1st = 4 pts/win ... 4th = 1 pt/win)</p>
+</header>
+
+<main>
+  <section class="section-leaderboard">
+    <h2>🏅 Leaderboard</h2>
+    <table>
+      <thead>
+        <tr><th>#</th><th>Player</th><th>Points</th><th>Teams Alive</th></tr>
+      </thead>
+      <tbody id="leaderboard"></tbody>
+    </table>
+  </section>
+
+  <section class="section-players">
+    <h2>👥 Players</h2>
+    <div class="players-grid" id="players"></div>
+  </section>
+
+  <section class="section-bracket">
+    <div class="section-header">
+      <h2>🧩 Bracket</h2>
+      <button type="button" id="reset-bracket" class="reset-btn">Reset bracket</button>
+    </div>
+    <p class="hint">Click a team to mark it as the winner of that match. Click the highlighted winner again (or "Clear pick") to undo.</p>
+    <div class="bracket" id="bracket"></div>
+  </section>
+</main>
+
+<footer>
+  Click teams in the bracket to record results (saved in this browser). Players and the initial 16 teams are edited in <code>data.js</code>.
+</footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
