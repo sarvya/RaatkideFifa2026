@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Admin — Raatkide FIFA World Cup 2026</title>
+<meta name="robots" content="noindex, nofollow" />
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+
+<div id="gate" class="gate">
+  <form id="gate-form" class="gate-card">
+    <h2>🔒 Admin Login</h2>
+    <input type="password" id="gate-password" placeholder="Password" autocomplete="current-password" />
+    <button type="submit">Unlock</button>
+    <p id="gate-error" class="gate-error"></p>
+  </form>
+</div>
+
+<div id="admin-content" style="display: none;">
+  <header>
+    <h1>🛠️ Raatkide Admin</h1>
+    <p>Manage players, set match winners, then export the updated <code>data.js</code>.</p>
+  </header>
+
+  <main>
+    <section class="section-players">
+      <h2>👥 Players</h2>
+      <div class="players-grid" id="admin-players"></div>
+
+      <form id="player-form" class="player-form">
+        <h3 id="player-form-title">Add Player</h3>
+        <label>Name<input type="text" id="player-name" required /></label>
+        <div class="pick-fields" id="pick-fields"></div>
+        <div class="player-form-actions">
+          <button type="submit" id="player-form-submit">Add Player</button>
+          <button type="button" id="player-form-cancel" style="display:none;">Cancel edit</button>
+        </div>
+        <p id="player-form-error" class="form-error"></p>
+      </form>
+    </section>
+
+    <section class="section-bracket">
+      <div class="section-header">
+        <h2>🧩 Set Results</h2>
+        <button type="button" id="reset-bracket" class="reset-btn">Reset all results</button>
+      </div>
+      <p class="hint">Click a team to mark it as the winner. Click the highlighted winner again (or "Clear pick") to undo.</p>
+      <div class="bracket" id="bracket"></div>
+    </section>
+
+    <section class="section-export">
+      <h2>📤 Publish</h2>
+      <p class="hint">
+        This generates the full contents of <code>data.js</code>. Copy or download it, replace the
+        <code>data.js</code> file in your project, then commit and push — the live site updates for everyone.
+      </p>
+      <div class="export-actions">
+        <button type="button" id="copy-btn">Copy to clipboard</button>
+        <button type="button" id="download-btn">Download data.js</button>
+        <span id="copy-status" class="copy-status"></span>
+      </div>
+      <textarea id="export-output" readonly spellcheck="false"></textarea>
+    </section>
+  </main>
+
+  <footer>
+    Draft changes are saved in this browser only until you export and push them.
+  </footer>
+</div>
+
+<script src="data.js"></script>
+<script src="bracket-core.js"></script>
+<script src="admin.js"></script>
+</body>
+</html>

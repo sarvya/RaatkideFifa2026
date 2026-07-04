@@ -29,20 +29,17 @@
   </section>
 
   <section class="section-bracket">
-    <div class="section-header">
-      <h2>🧩 Bracket</h2>
-      <button type="button" id="reset-bracket" class="reset-btn">Reset bracket</button>
-    </div>
-    <p class="hint">Click a team to mark it as the winner of that match. Click the highlighted winner again (or "Clear pick") to undo.</p>
+    <h2>🧩 Bracket</h2>
     <div class="bracket" id="bracket"></div>
   </section>
 </main>
 
 <footer>
-  Click teams in the bracket to record results (saved in this browser). Players and the initial 16 teams are edited in <code>data.js</code>.
+  Stats are read-only here. Results are managed on the admin page.
 </footer>
 
 <script src="data.js"></script>
+<script src="bracket-core.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

@@ -1,0 +1,189 @@
+.gate {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(160deg, #1e1b4b, #3b0764 40%, #0d3b2e 100%);
+}
+
+.gate-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 32px;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.gate-card h2 {
+  margin: 0 0 8px;
+  color: var(--green);
+}
+
+.gate-card input {
+  padding: 8px 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.gate-card button {
+  background: var(--green);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.gate-card button:hover {
+  filter: brightness(1.1);
+}
+
+.gate-error {
+  color: var(--danger);
+  font-size: 0.85rem;
+  margin: 0;
+  min-height: 1.2em;
+}
+
+.player-card-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.player-card-actions button {
+  flex: 1;
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid var(--blue);
+  background: #fff;
+  color: var(--blue);
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.player-card-actions button.danger {
+  border-color: var(--danger);
+  color: var(--danger);
+}
+
+.player-card-actions button:hover {
+  filter: brightness(0.95);
+}
+
+.player-form {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 2px dashed #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.player-form h3 {
+  margin: 0;
+  color: var(--blue);
+}
+
+.player-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.player-form input,
+.player-form select {
+  padding: 8px 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-family: inherit;
+}
+
+.pick-fields {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+}
+
+.player-form-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.player-form-actions button {
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#player-form-submit {
+  background: var(--green);
+  color: #fff;
+}
+
+#player-form-cancel {
+  background: #e5e7eb;
+  color: #1a1a1a;
+}
+
+.form-error {
+  color: var(--danger);
+  font-size: 0.85rem;
+  margin: 0;
+  min-height: 1.2em;
+}
+
+.section-export .hint {
+  margin-bottom: 12px;
+}
+
+.export-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.export-actions button {
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  background: var(--blue);
+  color: #fff;
+}
+
+.export-actions button:hover {
+  filter: brightness(1.1);
+}
+
+.copy-status {
+  color: var(--ok);
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+#export-output {
+  width: 100%;
+  min-height: 260px;
+  font-family: "Consolas", "Courier New", monospace;
+  font-size: 0.8rem;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  resize: vertical;
+}
