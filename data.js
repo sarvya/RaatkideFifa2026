@@ -59,7 +59,28 @@ const PLAYERS = [
     "name": "Vishal",
     "picks": [
       {
-        "team": "England",
+        "team": "France",
+        "priority": 1
+      },
+      {
+        "team": "Brazil",
+        "priority": 2
+      },
+      {
+        "team": "Portugal",
+        "priority": 3
+      },
+      {
+        "team": "Argentina",
+        "priority": 4
+      }
+    ]
+  },
+  {
+    "name": "Sarvesh",
+    "picks": [
+      {
+        "team": "France",
         "priority": 1
       },
       {
@@ -67,11 +88,95 @@ const PLAYERS = [
         "priority": 2
       },
       {
-        "team": "United States",
+        "team": "Argentina",
         "priority": 3
       },
       {
-        "team": "Belgium",
+        "team": "England",
+        "priority": 4
+      }
+    ]
+  },
+  {
+    "name": "Parag",
+    "picks": [
+      {
+        "team": "France",
+        "priority": 1
+      },
+      {
+        "team": "Brazil",
+        "priority": 2
+      },
+      {
+        "team": "Argentina",
+        "priority": 3
+      },
+      {
+        "team": "Portugal",
+        "priority": 4
+      }
+    ]
+  },
+  {
+    "name": "Tejas",
+    "picks": [
+      {
+        "team": "France",
+        "priority": 1
+      },
+      {
+        "team": "Argentina",
+        "priority": 2
+      },
+      {
+        "team": "Spain",
+        "priority": 3
+      },
+      {
+        "team": "Brazil",
+        "priority": 4
+      }
+    ]
+  },
+  {
+    "name": "Parth",
+    "picks": [
+      {
+        "team": "Spain",
+        "priority": 1
+      },
+      {
+        "team": "France",
+        "priority": 2
+      },
+      {
+        "team": "Brazil",
+        "priority": 3
+      },
+      {
+        "team": "Colombia",
+        "priority": 4
+      }
+    ]
+  },
+  {
+    "name": "Nikhil",
+    "picks": [
+      {
+        "team": "Portugal",
+        "priority": 1
+      },
+      {
+        "team": "Brazil",
+        "priority": 2
+      },
+      {
+        "team": "France",
+        "priority": 3
+      },
+      {
+        "team": "Colombia",
         "priority": 4
       }
     ]
@@ -104,7 +209,7 @@ const MATCHES = [
       "Brazil",
       "Norway"
     ],
-    "winner": "Brazil"
+    "winner": null
   },
   {
     "id": "R16-4",
@@ -113,7 +218,7 @@ const MATCHES = [
       "Mexico",
       "England"
     ],
-    "winner": "England"
+    "winner": null
   },
   {
     "id": "R16-5",
@@ -122,7 +227,7 @@ const MATCHES = [
       "Portugal",
       "Spain"
     ],
-    "winner": "Spain"
+    "winner": null
   },
   {
     "id": "R16-6",
@@ -131,7 +236,7 @@ const MATCHES = [
       "United States",
       "Belgium"
     ],
-    "winner": "Belgium"
+    "winner": null
   },
   {
     "id": "R16-7",
@@ -140,7 +245,7 @@ const MATCHES = [
       "Argentina",
       "Egypt"
     ],
-    "winner": "Argentina"
+    "winner": null
   },
   {
     "id": "R16-8",
@@ -149,7 +254,7 @@ const MATCHES = [
       "Switzerland",
       "Colombia"
     ],
-    "winner": "Colombia"
+    "winner": null
   },
   {
     "id": "QF-1",
