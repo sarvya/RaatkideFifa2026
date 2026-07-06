@@ -164,19 +164,19 @@ const PLAYERS = [
     "name": "Nikhil",
     "picks": [
       {
-        "team": "Portugal",
+        "team": "Argentina",
         "priority": 1
       },
       {
-        "team": "Brazil",
+        "team": "Spain",
         "priority": 2
       },
       {
-        "team": "France",
+        "team": "Brazil",
         "priority": 3
       },
       {
-        "team": "Colombia",
+        "team": "Belgium",
         "priority": 4
       }
     ]
@@ -209,7 +209,7 @@ const MATCHES = [
       "Brazil",
       "Norway"
     ],
-    "winner": null
+    "winner": "Norway"
   },
   {
     "id": "R16-4",
@@ -218,7 +218,7 @@ const MATCHES = [
       "Mexico",
       "England"
     ],
-    "winner": null
+    "winner": "England"
   },
   {
     "id": "R16-5",
