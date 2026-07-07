@@ -227,7 +227,7 @@ const MATCHES = [
       "Portugal",
       "Spain"
     ],
-    "winner": null
+    "winner": "Spain"
   },
   {
     "id": "R16-6",
@@ -236,7 +236,7 @@ const MATCHES = [
       "United States",
       "Belgium"
     ],
-    "winner": null
+    "winner": "Belgium"
   },
   {
     "id": "R16-7",
