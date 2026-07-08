@@ -245,7 +245,7 @@ const MATCHES = [
       "Argentina",
       "Egypt"
     ],
-    "winner": null
+    "winner": "Argentina"
   },
   {
     "id": "R16-8",
@@ -254,7 +254,7 @@ const MATCHES = [
       "Switzerland",
       "Colombia"
     ],
-    "winner": null
+    "winner": "Switzerland"
   },
   {
     "id": "QF-1",
