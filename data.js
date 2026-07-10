@@ -263,7 +263,7 @@ const MATCHES = [
       "R16-1",
       "R16-2"
     ],
-    "winner": null
+    "winner": "France"
   },
   {
     "id": "QF-2",
