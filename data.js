@@ -272,7 +272,7 @@ const MATCHES = [
       "R16-3",
       "R16-4"
     ],
-    "winner": null
+    "winner": "England"
   },
   {
     "id": "QF-3",
@@ -281,7 +281,7 @@ const MATCHES = [
       "R16-5",
       "R16-6"
     ],
-    "winner": null
+    "winner": "Spain"
   },
   {
     "id": "QF-4",
@@ -290,7 +290,7 @@ const MATCHES = [
       "R16-7",
       "R16-8"
     ],
-    "winner": null
+    "winner": "Argentina"
   },
   {
     "id": "SF-1",
