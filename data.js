@@ -297,18 +297,18 @@ const MATCHES = [
     "round": "Semifinal",
     "teams": [
       "QF-1",
-      "QF-2"
+      "QF-3"
     ],
-    "winner": null
+    "winner": "Spain"
   },
   {
     "id": "SF-2",
     "round": "Semifinal",
     "teams": [
-      "QF-3",
+      "QF-2",
       "QF-4"
     ],
-    "winner": null
+    "winner": "England"
   },
   {
     "id": "F",
