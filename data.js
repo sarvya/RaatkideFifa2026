@@ -308,7 +308,7 @@ const MATCHES = [
       "QF-2",
       "QF-4"
     ],
-    "winner": "England"
+    "winner": "Argentina"
   },
   {
     "id": "F",
