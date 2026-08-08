@@ -317,6 +317,6 @@ const MATCHES = [
       "SF-1",
       "SF-2"
     ],
-    "winner": null
+    "winner": "Spain"
   }
 ];
